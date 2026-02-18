@@ -1,16 +1,16 @@
 export default function Home() {
   return (
     <div className="min-h-screen flex justify-center items-center bg-gray-200 p-8">
-
+      
       <div className="flex flex-col md:flex-row gap-12">
 
-        {/* ================= CARD OSCURA ================= */}
+        {/* Dark Card */}
         <div className="bg-black text-white w-80 rounded-3xl overflow-hidden flex flex-col">
 
-          {/* Imagen superior */}
+          {/* Top Image */}
           <div className="relative h-36">
             <img
-              src="/bg1.jpg"
+              src="/imagen1.jpeg"
               alt="background"
               className="w-full h-full object-cover"
             />
@@ -18,33 +18,29 @@ export default function Home() {
             {/* Avatar */}
             <div className="absolute -bottom-6 left-6">
               <img
-                src="/avatar1.jpg"
+                src="/imagen2.jpeg"
                 alt="avatar"
-                className="w-14 h-14 rounded-full border-4 border-black"
+                className="w-14 h-14 rounded-full border-4 border-black object-cover"
               />
             </div>
-
           </div>
 
-          {/* Contenido */}
+          {/* Content */}
           <div className="p-6 flex flex-col flex-1">
 
-            {/* Nombre */}
             <div className="mt-6 mb-4">
               <h2 className="font-bold text-lg">Liam O'Connor</h2>
-              <p className="text-gray-400 text-sm">Visual Artist</p>
+              <p className="text-gray-300 text-sm">Visual Artist</p>
             </div>
 
-            {/* Stats */}
-            <div className="flex justify-between items-center mb-6">
+            <div className="flex justify-between items-center mb-6 text-white">
               <span>⭐ 5.0</span>
               <span>$99</span>
-              <span>12 Meses</span>
+              <span>12 Months</span>
             </div>
 
-            {/* Botón */}
             <div className="flex justify-center mt-auto">
-              <button className="bg-blue-500 px-6 py-2 rounded-xl w-full">
+              <button className="bg-blue-600 px-6 py-2 rounded-xl w-full">
                 Get In Touch
               </button>
             </div>
@@ -52,41 +48,40 @@ export default function Home() {
           </div>
         </div>
 
-        {/* ================= CARD CLARA ================= */}
+        {/* Light Card */}
         <div className="bg-white w-80 rounded-3xl overflow-hidden flex flex-col shadow-lg">
 
           <div className="relative h-36">
             <img
-              src="/bg2.jpg"
+              src="/imagen3.jpeg"
               alt="background"
               className="w-full h-full object-cover"
             />
 
             <div className="absolute -bottom-6 left-6">
               <img
-                src="/avatar2.jpg"
+                src="/imagen4.jpeg"
                 alt="avatar"
-                className="w-14 h-14 rounded-full border-4 border-white"
+                className="w-14 h-14 rounded-full border-4 border-white object-cover"
               />
             </div>
-
           </div>
 
-          <div className="p-6 flex flex-col flex-1">
+          <div className="p-6 flex flex-col flex-1 text-gray-900">
 
             <div className="mt-6 mb-4">
-              <h2 className="font-bold text-lg">Alex Turner</h2>
-              <p className="text-gray-500 text-sm">Creative Director</p>
+              <h2 className="font-bold text-lg text-gray-900">Alex Turner</h2>
+              <p className="text-gray-700 text-sm">Creative Director</p>
             </div>
 
-            <div className="flex justify-between items-center mb-6">
+            <div className="flex justify-between items-center mb-6 text-gray-800">
               <span>⭐ 5.0</span>
               <span>$150</span>
-              <span>24 Meses</span>
+              <span>24 Months</span>
             </div>
 
             <div className="flex justify-center mt-auto">
-              <button className="border px-6 py-2 rounded-xl w-full">
+              <button className="border border-gray-400 px-6 py-2 rounded-xl w-full text-gray-900">
                 Get In Touch
               </button>
             </div>
@@ -95,7 +90,6 @@ export default function Home() {
         </div>
 
       </div>
-
     </div>
   );
 }
